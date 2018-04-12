@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lxf-ay-tjA">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--封面-->
+        <scene sceneID="sDU-l2-luQ">
+            <objects>
+                <viewController id="2Bs-K7-IYu" userLabel="封面" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QyE-4A-AKd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spurs1" translatesAutoresizingMaskIntoConstraints="NO" id="aXY-zF-Woh">
+                                <rect key="frame" x="0.0" y="199" width="414" height="277"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6S-CB-Qhb">
+                                <rect key="frame" x="187" y="508" width="195" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="教練" backgroundImage="箭頭">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eqp-Pv-1Dm" kind="show" id="IIG-mx-uQ5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuw-9h-H4a">
+                                <rect key="frame" x="195" y="608" width="178" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="隊員介紹" backgroundImage="箭頭">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="XDd-LK-e4J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="v3T-ZL-35y"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SPURS" id="ygI-rr-1wy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jsg-jn-s4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-467" y="-612"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wuW-jG-D5h">
+            <objects>
+                <navigationController id="Lxf-ay-tjA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="23Z-gF-o8F">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2Bs-K7-IYu" kind="relationship" relationship="rootViewController" id="OP9-SM-FSg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxy-ev-blj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1361" y="-612"/>
+        </scene>
+        <!--教練介紹-->
+        <scene sceneID="xyu-eH-9dF">
+            <objects>
+                <viewController id="eqp-Pv-1Dm" userLabel="教練介紹" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g45-ee-qb3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nVB-xc-0xx">
+                                <rect key="frame" x="60" y="260" width="295" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pop" translatesAutoresizingMaskIntoConstraints="NO" id="quT-mQ-Z6u">
+                                        <rect key="frame" x="30" y="32" width="235" height="221"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gregg Popovich" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCr-eS-zWk">
+                                <rect key="frame" x="20" y="176" width="228" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QAK-jf-pW0">
+                                <rect key="frame" x="60" y="571" width="295" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Gregg Popovich，出生於印第安納州東芝加哥，是塞爾維亞和克羅埃西亞裔美國籃球運動員、教練，美國空軍軍官學校畢業，主修蘇聯研究，在校時是籃球隊隊長，服役時在情報單位，後來回空軍官校擔任籃球隊助理教練，並在丹佛大學取得運動科學碩士學位。現任NBA聖安東尼奧馬刺隊總教練，也率領馬刺隊在1999年、2003年、2005年、2007年、2014年取得NBA總冠軍。2003年、2012年、2014年當選NBA最佳教練。波波維奇也是NBA史上五位贏得五次或五次以上總冠軍的教練。波波維奇被認為是NBA歷史上最偉大的總教練之一，綽號「Pop」。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K6I-mS-nwM">
+                                <rect key="frame" x="20" y="84" width="237" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spurs" translatesAutoresizingMaskIntoConstraints="NO" id="NFb-L8-aSD">
+                                        <rect key="frame" x="20" y="8" width="59" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="     教練" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvl-NR-lKH">
+                                        <rect key="frame" x="74" y="7" width="132" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="42"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="O6g-SO-YLW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NOS-P6-blK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="384" y="-612"/>
+        </scene>
+        <!--成員列表-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="成員列表" customClass="ViewController" customModule="jennys_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJS-Ae-isz">
+                                <rect key="frame" x="248" y="219" width="100" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Manu" backgroundImage="NBA">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="S3N-dg-ZaG" kind="show" id="IED-BF-Tx8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwW-n5-cpJ">
+                                <rect key="frame" x="66" y="391" width="100" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Parker" backgroundImage="NBA">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bf0-Vd-Onb" kind="show" id="0lp-iv-6t9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32l-BZ-chE">
+                                <rect key="frame" x="248" y="391" width="100" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Leonard" backgroundImage="NBA">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wsO-L6-1au" kind="show" id="kEm-rB-WI4"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QjM-lg-pU3">
+                                <rect key="frame" x="20" y="83" width="286" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spurs" translatesAutoresizingMaskIntoConstraints="NO" id="0Ac-u8-Ver">
+                                        <rect key="frame" x="20" y="8" width="59" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  成員介紹" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1et-Yb-sTL">
+                                        <rect key="frame" x="74" y="7" width="212" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="42"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZ4-SU-EcC">
+                                <rect key="frame" x="66" y="219" width="100" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Duncan" backgroundImage="NBA">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Xi7-Ei-kRx" kind="show" id="4ac-c3-9x4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PU-MB-R9c">
+                                <rect key="frame" x="66" y="560" width="100" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Aldridge" backgroundImage="NBA">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="des-B3-iOl" kind="show" id="rXe-l9-Gwm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V38-fJ-uXW">
+                                <rect key="frame" x="248" y="560" width="100" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Peter" backgroundImage="NBA">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uVu-80-yDs" kind="show" id="cgW-Bl-PHk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="383" y="174"/>
+        </scene>
+        <!--Duncan-->
+        <scene sceneID="bgc-Rz-E1w">
+            <objects>
+                <viewController id="Xi7-Ei-kRx" userLabel="Duncan" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kkU-af-MfC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duncan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvD-JB-Pt3">
+                                <rect key="frame" x="20" y="65" width="134" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ogH-ie-xQz">
+                                <rect key="frame" x="40" y="483" width="336" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Tim Duncan，綽號「大基本功」（The Big Fundamental）、「石佛」，生於美屬維京群島首府克里斯琴斯特德，場上位置為大前鋒/中鋒。                       鄧肯在中學之前是一位游泳選手，在高中成為一名籃球選手，在維克弗斯特大學加入籃球校隊，獲得了大西洋沿岸聯盟最佳運動員、奈史密斯學院年度最佳球員、約翰伍登獎。畢業後，鄧肯以狀元身份加入馬刺隊， 鄧肯被廣泛認為是史上最好的大前鋒。他曾獲得2次最有價值球員，並且五度帶領馬刺隊在1999年、2003年、2005年、2007年和2014年獲得NBA總冠軍，更年年進入季後賽，亦三度成為NBA總決賽最有價值球員。此外，鄧肯還十五度入選NBA全明星賽、十五度入選NBA最佳陣容、十五度入選NBA最佳防守陣容。2016年7月11日正式宣布退休，結束了長達19年的NBA球員生涯，職業球員生涯都在聖安東尼奧馬刺隊渡過。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9AJ-2Y-xMv">
+                                <rect key="frame" x="38" y="153" width="338" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Duncan" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-Gj-JxT">
+                                        <rect key="frame" x="11" y="27" width="316" height="239"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ODj-Ut-oij"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujC-zH-En3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="-951"/>
+        </scene>
+        <!--Leonard-->
+        <scene sceneID="Z1n-38-GX2">
+            <objects>
+                <viewController id="wsO-L6-1au" userLabel="Leonard" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2gw-ZE-Rwx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leonard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWf-qg-Zvh">
+                                <rect key="frame" x="20" y="65" width="134" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xFN-xY-PIS">
+                                <rect key="frame" x="40" y="483" width="336" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Kawhi Anthony Leonard，出生於美國加利福尼亞州洛杉磯，為現役美國NBA聯盟的職業籃球運動員。目前效力於聖安東尼奧馬刺，主要擔任小前鋒的位置，是聯盟現役頂尖的小前鋒之一。
+
+雷納德大學時期效力於聖地牙哥州立大學，之後在2011年NBA選秀大會中被印第安納溜馬以首輪第十五順位選中，隨即被交易至聖安東尼奧馬刺。2014年，雷納德獲得NBA總決賽MVP，成為自魔術強森之後最年輕獲得總決賽MVP的球員。在2014年NBA總決賽中，聖安東尼奧馬刺對邁阿密熱火的第四場比賽裡，雷納德一個人獨拿20分、14籃板、3抄截以及3阻攻，上一個在總冠軍賽達到如此標竿的是2003年的提姆·鄧肯。
+
+2014–15賽季，雷納德以場均2.3次的抄截數獲得NBA抄截王，成為自2005–06賽季的傑拉德·華勒斯後第二個以前鋒位置獲得此殊榮的球員 ，同時雷納德也獲選為該年度NBA最佳防守球員。成為史上第三位擁有總決賽MVP與最佳防守球員獎項的球員，前兩位分別是麥可·喬丹與哈基姆·歐拉朱萬。
+
+雷納德為聯盟當今頂級的前鋒之一，他在球場上的進攻與防守兩端都擁有極大的威脅性，無論是外線投籃、急停跳投、背框單打皆是頂尖水準，同時雷納德因天生的延展性和大手，使他擁有非常出色的斷球能力，他是聯盟中極少數進攻和防守端都達到最高水平的球員之一。
+
+2017–18賽季，由於雷納德肩膀遭受撕裂傷困擾，缺席了賽季剩餘的賽事，至今仍復出無望。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P4w-CW-IFL">
+                                <rect key="frame" x="43" y="151" width="329" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Leonard" translatesAutoresizingMaskIntoConstraints="NO" id="CtC-b6-pgv">
+                                        <rect key="frame" x="26" y="19" width="277" height="261"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ZTe-fH-ZwU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hxe-Cb-6pa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1259" y="1202"/>
+        </scene>
+        <!--Manu-->
+        <scene sceneID="48s-FV-S1z">
+            <objects>
+                <viewController id="S3N-dg-ZaG" userLabel="Manu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FEM-N4-ZsH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oX-gY-fSX">
+                                <rect key="frame" x="20" y="65" width="134" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xKo-U8-7V5">
+                                <rect key="frame" x="40" y="483" width="336" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Manu Ginóbili，國籍阿根廷，現效力於NBA聖安東尼奧馬刺隊，球衣號碼20號，場上位置為得分後衛。他身高1米98，體重93公斤。左手球員，善於蛇形突破和遠射，並有獨門絕技歐洲步，連火箭隊的詹姆士·哈登都承認自己打球的風格樣版正是吉諾比利，巔峰期間的吉諾比利就是無解般的存在，尤其是他那可怕的鬼之切入，也因為那可怕的切入，所以又有刺客、妖刀之稱呼，2005年總冠軍系列戰，即使是銅牆鐵壁的底特律活塞也擋不住。然而，這樣一張的王牌級球員，卻甘心在馬刺扮演最佳第六人，與提姆·鄧肯和東尼·帕克組成「GDP三巨頭」，幫助馬刺隊於2003、2005、2007、2014年獲得NBA總冠軍。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2aQ-AW-pDS">
+                                <rect key="frame" x="43" y="151" width="329" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Manu_Ginóbili" translatesAutoresizingMaskIntoConstraints="NO" id="wXa-Mw-zxT">
+                                        <rect key="frame" x="38" y="21" width="252" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="JN0-Gp-1KA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2h-XW-WA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="-234"/>
+        </scene>
+        <!-- Parker-->
+        <scene sceneID="VKu-Mo-cFy">
+            <objects>
+                <viewController id="bf0-Vd-Onb" userLabel=" Parker" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vFH-Tz-4hy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6e-c2-PiI">
+                                <rect key="frame" x="20" y="65" width="134" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L4R-aL-zJO">
+                                <rect key="frame" x="40" y="483" width="336" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">William Anthony Parker，是法國籍籃球運動員，現在效力NBA聖安東尼奧馬刺隊。球衣號碼為9號，位置是控球後衛。身高188公分，體重81.2公斤。2001年被選入NBA，加入聖安東尼奧馬刺隊。在2006年首度打全明星賽，至今已六次入選。擁有出色的切入和中距離投籃能力。幫助球隊四度奪得NBA總冠軍，並於2007年獲得總決賽MVP，同時具備優異的傳球視野與控球能力,切入籃下的速度極快故有「法國小跑車」的外號,2013年和邁阿密熱火隊爭奪冠軍失利，4-3遭擊敗。2014年與邁阿密熱火隊再度相逢，以4-1大比分輕取熱火，拿下隊史第五冠。他的球風偏重於切入突破得分或中距離跳投，其華麗的藉由Tim Duncan的擋拆反手上籃為其招。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GXc-cT-16u">
+                                <rect key="frame" x="43" y="151" width="329" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Parker" translatesAutoresizingMaskIntoConstraints="NO" id="A60-X0-pwm">
+                                        <rect key="frame" x="37" y="14" width="255" height="276"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="mPV-fp-gaS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMP-Cl-0Gj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="489"/>
+        </scene>
+        <!--Aldridge-->
+        <scene sceneID="3m0-kB-Rzf">
+            <objects>
+                <viewController id="des-B3-iOl" userLabel="Aldridge" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b1v-ZH-BN4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aldridge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJa-4j-kTD">
+                                <rect key="frame" x="20" y="65" width="134" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ibk-i9-Xzy">
+                                <rect key="frame" x="40" y="483" width="336" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">LaMarcus Nurae Aldridge，，出生於德克薩斯州達拉斯，是美國職業籃球運動員，身高6英尺11英寸(211公分)，場上位置為大前鋒或中鋒，目前效力於聖安東尼奧馬刺。
+
+拉瑪庫斯·阿爾德里奇在2006年NBA選秀中以首輪第2順位被芝加哥公牛隊選中後被交易至波特蘭拓荒者，在波特蘭拓荒者待了九個賽季後，阿爾德里奇在2015年7月以自由球員身份加盟聖安東尼奧馬刺。職業生涯一次入選NBA年度第二隊，三次入選NBA年度第三隊，五次入選NBA全明星賽，曾與布蘭頓·羅伊、格雷格·歐登組成波特蘭拓荒者鐵三角。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yKa-yp-3wW">
+                                <rect key="frame" x="43" y="151" width="329" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aldridge" translatesAutoresizingMaskIntoConstraints="NO" id="PJO-mr-E2e">
+                                        <rect key="frame" x="24" y="19" width="284" height="261"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="R7C-hL-fgn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dp9-SG-neL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="1202"/>
+        </scene>
+        <!--Peter-->
+        <scene sceneID="bwT-Vp-KPW">
+            <objects>
+                <viewController id="uVu-80-yDs" userLabel="Peter" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wya-U1-86X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-5z-m4K">
+                                <rect key="frame" x="20" y="65" width="134" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QK6-18-LxQ">
+                                <rect key="frame" x="53" y="483" width="308" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Peter，清華研究所畢業。愛好Apple相關的所有事物，精通iOS程式設計。平日的興趣為桌球，創作和享受可可。除了一天一顆蘋果強身，也努力保持一天研究一項iOS SDK技術的學習心態。 
+
+ 未來可能效力於聖安東尼奧馬刺。
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-af-7q1">
+                                <rect key="frame" x="53" y="150" width="308" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Peter" translatesAutoresizingMaskIntoConstraints="NO" id="vF7-sn-egU">
+                                        <rect key="frame" x="49" y="39" width="210" height="208"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="AXi-5l-6Lk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z56-nK-of8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-227.536231884058" y="1201.6304347826087"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Duncan" width="259" height="194"/>
+        <image name="Leonard" width="600" height="400"/>
+        <image name="Manu_Ginóbili" width="800" height="930"/>
+        <image name="NBA" width="93" height="210"/>
+        <image name="Parker" width="220" height="295"/>
+        <image name="Peter" width="100" height="100"/>
+        <image name="aldridge" width="850" height="560"/>
+        <image name="pop" width="500" height="482"/>
+        <image name="spurs" width="178" height="272"/>
+        <image name="spurs1" width="299" height="168"/>
+        <image name="箭頭" width="650" height="335"/>
+    </resources>
+</document>
